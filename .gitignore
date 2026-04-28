@@ -2,9 +2,9 @@
 bin/
 obj/
 
-# Logs
-Logs/
-*.log
+# Ignorar SOLO logs generados en build
+**/bin/**/Debug/net*/logs/
+**/bin/**/Release/net*/logs/
 
 # Config sensibles
 appsettings.json
