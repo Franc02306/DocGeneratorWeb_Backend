@@ -1,0 +1,23 @@
+﻿# Build
+bin/
+obj/
+
+# Logs
+Logs/
+*.log
+
+# Config sensibles
+appsettings.json
+appsettings.Development.json
+
+# Queries (solo en Infrastructure)
+DocGenerator.Infrastructure/Queries/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# OS
+Thumbs.db
+.DS_Store

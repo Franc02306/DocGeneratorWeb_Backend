@@ -1,0 +1,6 @@
+@DocGenerator.Presentation_HostAddress = http://localhost:5003
+
+GET {{DocGenerator.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
