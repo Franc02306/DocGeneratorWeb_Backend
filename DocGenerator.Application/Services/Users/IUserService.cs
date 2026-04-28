@@ -8,6 +8,11 @@ namespace DocGenerator.Application.Services.Users
         /// <summary>
         /// Crear al usuario en la web
         /// </summary>
-        Task<ApiResponse<int>> CreateAsync(CreateUserRequest request);
+        Task<ApiResponse<int>> CreateUserAsync(CreateUserRequest request);
+
+        /// <summary>
+        /// Actualizar al usuario en la web
+        /// </summary>
+        Task<ApiResponse<int>> UpdateUserAsync(UpdateUserRequest request);
     }
 }

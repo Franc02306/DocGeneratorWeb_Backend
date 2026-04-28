@@ -10,6 +10,12 @@
     <None Remove="Queries\HANA\Authentications\GetUserByUserName.sql" />
     <None Remove="Queries\HANA\Users\CreateUser.sql" />
     <None Remove="Queries\HANA\Users\DeleteUserById.sql" />
+    <None Remove="Queries\HANA\Users\ExistsEmailExceptId.sql" />
+    <None Remove="Queries\HANA\Users\ExistsUserNameExceptId.sql" />
+    <None Remove="Queries\HANA\Users\UpdateUser.sql" />
+    <None Remove="Queries\SQLSERVER\Users\ExistsEmailExceptId.sql" />
+    <None Remove="Queries\SQLSERVER\Users\ExistsUserNameExceptId.sql" />
+    <None Remove="Queries\SQLSERVER\Users\UpdateUser.sql" />
   </ItemGroup>
 
   <ItemGroup>
@@ -22,10 +28,19 @@
     <Content Include="Queries\HANA\Users\ExistsEmail.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Queries\HANA\Users\ExistsEmailExceptId.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Queries\HANA\Users\ExistsUserName.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\HANA\Users\CreateUser.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Users\ExistsUserNameExceptId.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Users\UpdateUser.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\SQLSERVER\Users\CreateUser.sql">
@@ -37,7 +52,16 @@
     <Content Include="Queries\SQLSERVER\Users\ExistsEmail.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Queries\SQLSERVER\Users\ExistsEmailExceptId.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Queries\SQLSERVER\Users\ExistsUserName.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Users\ExistsUserNameExceptId.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Users\UpdateUser.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

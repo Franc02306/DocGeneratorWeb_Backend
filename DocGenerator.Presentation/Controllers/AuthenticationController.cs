@@ -16,6 +16,9 @@ namespace DocGenerator.Presentation.Controllers
             _authenticationService = authenticationService;
         }
 
+        /// <summary>
+        /// Valida las credencales y determinar si el usuario puede iniciar sesión en la web
+        /// </summary>
         [AllowAnonymous]
         [HttpPost("login")]
         public async Task<IActionResult> LoginUser([FromBody] LoginRequest request)
