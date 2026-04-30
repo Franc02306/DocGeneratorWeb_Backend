@@ -41,7 +41,7 @@ namespace DocGenerator.Infrastructure.Repositories.Commons
             using var conn = _factory.CreateConnection();
             conn.Open();
 
-            var path = DbHelper.GetQueryPath(_factory.GetProvider(), "Documents", "ExistsRetentionCodeInSap.sql");
+            var path = DbHelper.GetQueryPath(_factory.GetProvider(), "Commons", "ExistsRetentionCodeInSap.sql");
             var sql = await File.ReadAllTextAsync(path);
 
             using var cmd = conn.CreateCommand();

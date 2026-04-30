@@ -1,13 +1,17 @@
 using DocGenerator.Application.Helpers.Authentications;
 using DocGenerator.Application.Services.Authentications;
+using DocGenerator.Application.Services.Documents;
 using DocGenerator.Application.Services.EmailNotifications;
 using DocGenerator.Application.Services.Logs;
 using DocGenerator.Application.Services.Users;
 using DocGenerator.Application.Settings;
 using DocGenerator.Infrastructure.Persistence;
 using DocGenerator.Infrastructure.Repositories.Authentications;
+using DocGenerator.Infrastructure.Repositories.Commons;
 using DocGenerator.Infrastructure.Repositories.Documents;
+using DocGenerator.Infrastructure.Repositories.Suppliers;
 using DocGenerator.Infrastructure.Repositories.Users;
+using DocGenerator.Infrastructure.Repositories.UserTokens;
 using DocGenerator.Presentation.Middlewares;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -108,12 +112,16 @@ namespace DocGenerator.Presentation
             builder.Services.AddScoped<IUserRepository, UserRepository>();
             builder.Services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
             builder.Services.AddScoped<IDocumentRepository, DocumentRepository>();
+            builder.Services.AddScoped<ISupplierRepository, SupplierRepository>();
+            builder.Services.AddScoped<ICommonRepository, CommonRepository>();
+            builder.Services.AddScoped<IUserTokenRepository, UserTokenRepository>();
 
             // Servicios
             builder.Services.AddScoped<IUserService, UserService>();
             builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
             builder.Services.AddScoped<ILogService, LogService>();
             builder.Services.AddScoped<IEmailNotification, EmailNotification>();
+            builder.Services.AddScoped<IDocumentService, DocumentService>();
 
             // Helpers
             builder.Services.AddScoped<JwtHelper>();
