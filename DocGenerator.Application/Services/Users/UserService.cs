@@ -24,7 +24,7 @@ namespace DocGenerator.Application.Services.Users
         public async Task<ApiResponse<int>> CreateUserAsync(CreateUserRequest request)
         {
             // 1. Validaciones
-            var errors = UserValidatorHelper.ValidateCreate(request);
+            var errors = UserValidator.ValidateCreate(request);
             errors.AddRange(PasswordHelper.Validate(request.Password));
 
             if (!errors.Any())
@@ -77,7 +77,7 @@ namespace DocGenerator.Application.Services.Users
         public async Task<ApiResponse<int>> UpdateUserAsync(UpdateUserRequest request)
         {
             // 1. Validaciones
-            var errors = UserValidatorHelper.ValidateUpdate(request);
+            var errors = UserValidator.ValidateUpdate(request);
 
             if (!errors.Any())
             {

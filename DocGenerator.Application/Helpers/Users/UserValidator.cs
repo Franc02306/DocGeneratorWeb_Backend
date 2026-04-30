@@ -3,7 +3,7 @@ using System.Text.RegularExpressions;
 
 namespace DocGenerator.Application.Helpers.Users
 {
-    public class UserValidatorHelper
+    public class UserValidator
     {
         /// <summary>
         /// Valida la creación del usuario

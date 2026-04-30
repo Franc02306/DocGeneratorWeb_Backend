@@ -8,11 +8,29 @@
 
   <ItemGroup>
     <None Remove="Queries\HANA\Authentications\GetUserByUserName.sql" />
+    <None Remove="Queries\HANA\Commons\ExistsCurrencyInSap.sql" />
+    <None Remove="Queries\HANA\Commons\ExistsRetentionCodeInSap.sql" />
+    <None Remove="Queries\HANA\Documents\CreateDocument.sql" />
+    <None Remove="Queries\HANA\Documents\CreateDocumentDetail.sql" />
+    <None Remove="Queries\HANA\Documents\DeleteDocumentById.sql" />
+    <None Remove="Queries\HANA\Documents\ExistsDimensionInSap.sql" />
+    <None Remove="Queries\HANA\Documents\ExistsDocument.sql" />
+    <None Remove="Queries\HANA\Documents\ExistsItemInSap.sql" />
+    <None Remove="Queries\HANA\Documents\ExistsProjectInSap.sql" />
+    <None Remove="Queries\HANA\Documents\ExistsTaxCodeInSap.sql" />
+    <None Remove="Queries\HANA\Documents\ExistsWarehouseInSap.sql" />
+    <None Remove="Queries\HANA\Suppliers\SupplierHasRetentionCode.sql" />
     <None Remove="Queries\HANA\Users\CreateUser.sql" />
     <None Remove="Queries\HANA\Users\DeleteUserById.sql" />
+    <None Remove="Queries\HANA\Users\ExistsActiveUser.sql" />
     <None Remove="Queries\HANA\Users\ExistsEmailExceptId.sql" />
     <None Remove="Queries\HANA\Users\ExistsUserNameExceptId.sql" />
     <None Remove="Queries\HANA\Users\UpdateUser.sql" />
+    <None Remove="Queries\SQLSERVER\Documents\CreateDocument.sql" />
+    <None Remove="Queries\SQLSERVER\Documents\ExistsDocumentInSap.sql" />
+    <None Remove="Queries\SQLSERVER\Suppliers\IsSupplierRucMatch.sql" />
+    <None Remove="Queries\SQLSERVER\Suppliers\SupplierHasRetentionCode.sql" />
+    <None Remove="Queries\SQLSERVER\Users\ExistsActiveUser.sql" />
     <None Remove="Queries\SQLSERVER\Users\ExistsEmailExceptId.sql" />
     <None Remove="Queries\SQLSERVER\Users\ExistsUserNameExceptId.sql" />
     <None Remove="Queries\SQLSERVER\Users\UpdateUser.sql" />
@@ -22,7 +40,55 @@
     <Content Include="Queries\HANA\Authentications\GetUserByUserName.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Queries\HANA\Commons\ExistsCurrencyInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Commons\ExistsRetentionCodeInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Documents\CreateDocument.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Documents\CreateDocumentDetail.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Documents\DeleteDocumentById.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Documents\ExistsDimensionInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Documents\ExistsDocument.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Documents\ExistsDocumentInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Documents\ExistsItemInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Documents\ExistsProjectInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Documents\ExistsTaxCodeInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Documents\ExistsWarehouseInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Suppliers\ExistsSupplierInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Suppliers\IsSupplierRucMatch.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Suppliers\SupplierHasRetentionCode.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Queries\HANA\Users\DeleteUserById.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Users\ExistsActiveUser.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\HANA\Users\ExistsEmail.sql">
@@ -43,10 +109,58 @@
     <Content Include="Queries\HANA\Users\UpdateUser.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Queries\SQLSERVER\Commons\ExistsCurrencyInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Commons\ExistsRetentionCodeInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Documents\CreateDocument.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Documents\CreateDocumentDetail.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Documents\DeleteDocumentById.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Documents\ExistsDimensionInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Documents\ExistsDocument.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Documents\ExistsDocumentInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Documents\ExistsItemInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Documents\ExistsProjectInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Documents\ExistsTaxCodeInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Documents\ExistsWarehouseInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Suppliers\ExistsSupplierInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Suppliers\IsSupplierRucMatch.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Suppliers\SupplierHasRetentionCode.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Queries\SQLSERVER\Users\CreateUser.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\SQLSERVER\Users\DeleteUserById.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Users\ExistsActiveUser.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\SQLSERVER\Users\ExistsEmail.sql">

@@ -173,5 +173,26 @@ namespace DocGenerator.Infrastructure.Repositories.Users
 
             return Convert.ToInt32(result) > 0;
         }
+
+        /// <summary>
+        /// Valida si el usuario existe y está activo
+        /// </summary>
+        public async Task<bool> ExistsActiveUserAsync(int userId)
+        {
+            using var conn = _factory.CreateConnection();
+            conn.Open();
+
+            var path = DbHelper.GetQueryPath(_factory.GetProvider(), "Users", "ExistsActiveUser.sql");
+            var sql = await File.ReadAllTextAsync(path);
+
+            using var cmd = conn.CreateCommand();
+            cmd.CommandText = sql;
+
+            DbHelper.AddParameter(cmd, userId);
+
+            var result = cmd.ExecuteScalar();
+
+            return Convert.ToInt32(result) > 0;
+        }
     }
 }

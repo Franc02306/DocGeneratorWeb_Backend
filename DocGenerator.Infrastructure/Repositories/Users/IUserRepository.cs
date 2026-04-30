@@ -38,5 +38,10 @@ namespace DocGenerator.Infrastructure.Repositories.Users
         /// Valida si existe otro usuario con el mismo email
         /// </summary>
         Task<bool> ExistsEmailExceptIdAsync(string email, int id);
+
+        /// <summary>
+        /// Valida si el usuario existe y está activo
+        /// </summary>
+        Task<bool> ExistsActiveUserAsync(int userId);
     }
 }

@@ -75,7 +75,7 @@ namespace DocGenerator.Presentation
                         var response = new
                         {
                             success = false,
-                            message = "No autorizado. Debe enviar un token válido.",
+                            message = "No autorizado. Debe de iniciar sesión.",
                             data = (object?)null,
                             errors = (object?)null
                         };
