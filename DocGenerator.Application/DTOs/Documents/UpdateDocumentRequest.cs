@@ -2,8 +2,6 @@
 {
     public class UpdateDocumentRequest
     {
-        public int Id { get; set; }
-
         public DateTime? PostingDate { get; set; }
         public DateTime? DocumentDate { get; set; }
         public DateTime? DueDate { get; set; }
@@ -25,5 +23,7 @@
         public string? RetentionCode { get; set; }
 
         public decimal? DocumentTotal { get; set; }
+
+        public List<UpdateDocDetailRequest>? Details { get; set; }
     }
 }

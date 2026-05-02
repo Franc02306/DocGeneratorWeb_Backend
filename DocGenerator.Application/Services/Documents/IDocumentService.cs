@@ -9,5 +9,10 @@ namespace DocGenerator.Application.Services.Documents
         /// Creación de un documento (cabecera + detalle)
         /// </summary>
         Task<ApiResponse<int>> CreateDocumentAsync(CreateDocumentRequest request);
+
+        /// <summary>
+        /// Actualización de un documento (cabecera + detalle)
+        /// </summary>
+        Task<ApiResponse<int>> UpdateDocumentAsync(int id, UpdateDocumentRequest request);
     }
 }

@@ -34,5 +34,23 @@ namespace DocGenerator.Presentation.Controllers
         }
 
         #endregion
+
+        #region PUT - PATCH
+
+        /// <summary>
+        /// Actualización de un documento (cabecera + detalle)
+        /// </summary>
+        [HttpPatch("update-document/{id}")]
+        public async Task<IActionResult> UpdateDocument(int id, [FromBody] UpdateDocumentRequest request)
+        {
+            var response = await _documentService.UpdateDocumentAsync(id, request);
+
+            if (!response.Success)
+                return BadRequest(response);
+
+            return Ok(response);
+        }
+
+        #endregion
     }
 }

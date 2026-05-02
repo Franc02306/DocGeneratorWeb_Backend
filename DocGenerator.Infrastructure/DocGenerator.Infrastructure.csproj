@@ -13,12 +13,18 @@
     <None Remove="Queries\HANA\Documents\CreateDocument.sql" />
     <None Remove="Queries\HANA\Documents\CreateDocumentDetail.sql" />
     <None Remove="Queries\HANA\Documents\DeleteDocumentById.sql" />
+    <None Remove="Queries\HANA\Documents\DeleteDocumentDetailById.sql" />
     <None Remove="Queries\HANA\Documents\ExistsDimensionInSap.sql" />
     <None Remove="Queries\HANA\Documents\ExistsDocument.sql" />
+    <None Remove="Queries\HANA\Documents\ExistsDocumentById.sql" />
+    <None Remove="Queries\HANA\Documents\ExistsDocumentDetailById.sql" />
+    <None Remove="Queries\HANA\Documents\ExistsDocumentExceptId.sql" />
     <None Remove="Queries\HANA\Documents\ExistsItemInSap.sql" />
     <None Remove="Queries\HANA\Documents\ExistsProjectInSap.sql" />
     <None Remove="Queries\HANA\Documents\ExistsTaxCodeInSap.sql" />
     <None Remove="Queries\HANA\Documents\ExistsWarehouseInSap.sql" />
+    <None Remove="Queries\HANA\Documents\UpdateDocument.sql" />
+    <None Remove="Queries\HANA\Documents\UpdateDocumentDetail.sql" />
     <None Remove="Queries\HANA\Suppliers\SupplierHasRetentionCode.sql" />
     <None Remove="Queries\HANA\Users\CreateUser.sql" />
     <None Remove="Queries\HANA\Users\DeleteUserById.sql" />
@@ -55,10 +61,22 @@
     <Content Include="Queries\HANA\Documents\DeleteDocumentById.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Queries\HANA\Documents\DeleteDocumentDetailById.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Queries\HANA\Documents\ExistsDimensionInSap.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\HANA\Documents\ExistsDocument.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Documents\ExistsDocumentById.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Documents\ExistsDocumentDetailById.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Documents\ExistsDocumentExceptId.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\HANA\Documents\ExistsDocumentInSap.sql">
@@ -74,6 +92,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\HANA\Documents\ExistsWarehouseInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Documents\UpdateDocument.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\HANA\Documents\UpdateDocumentDetail.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\HANA\Suppliers\ExistsSupplierInSap.sql">
@@ -124,10 +148,22 @@
     <Content Include="Queries\SQLSERVER\Documents\DeleteDocumentById.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Queries\SQLSERVER\Documents\DeleteDocumentDetailById.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Queries\SQLSERVER\Documents\ExistsDimensionInSap.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\SQLSERVER\Documents\ExistsDocument.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Documents\ExistsDocumentById.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Documents\ExistsDocumentDetailById.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Documents\ExistsDocumentExceptId.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\SQLSERVER\Documents\ExistsDocumentInSap.sql">
@@ -143,6 +179,12 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\SQLSERVER\Documents\ExistsWarehouseInSap.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Documents\UpdateDocument.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Documents\UpdateDocumentDetail.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\SQLSERVER\Suppliers\ExistsSupplierInSap.sql">

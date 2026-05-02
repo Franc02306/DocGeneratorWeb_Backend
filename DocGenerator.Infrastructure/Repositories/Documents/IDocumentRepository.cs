@@ -26,6 +26,21 @@ namespace DocGenerator.Infrastructure.Repositories.Documents
         /// </summary>
         Task<bool> ExistsDocumentInSapAsync(string ruc, string documentType, string series, string correlative);
 
+        /// <summary>
+        /// Valida si el documento existe por ID
+        /// </summary>
+        Task<bool> ExistsDocumentByIdAsync(int id);
+
+        /// <summary>
+        /// Valida duplicidad en WEB excluyendo el mismo documento
+        /// </summary>
+        Task<bool> ExistsDocumentExceptIdAsync(int id, string ruc, string documentType, string series, string correlative);
+
+        /// <summary>
+        /// Actualiza la cabecera del documento
+        /// </summary>
+        Task<int> UpdateDocumentAsync(Document document);
+
         #endregion
 
         #region DOCUMENTO | DETALLE
@@ -59,6 +74,21 @@ namespace DocGenerator.Infrastructure.Repositories.Documents
         /// Valida si una dimensión existe en SAP según su código de dimensión
         /// </summary>
         Task<bool> ExistsDimensionInSapAsync(int dimensionCode, string dimensionValue);
+
+        /// <summary>
+        /// Actualiza un detalle de documento existente
+        /// </summary>
+        Task<int> UpdateDocumentDetailAsync(DocumentDetail detail);
+
+        /// <summary>
+        /// Elimina un detalle específico de un documento
+        /// </summary>
+        Task<int> DeleteDocumentDetailByIdAsync(int detailId, int documentId);
+
+        /// <summary>
+        /// Valida si un detalle pertenece a un documento
+        /// </summary>
+        Task<bool> ExistsDocumentDetailByIdAsync(int detailId, int documentId);
 
         #endregion
     }
