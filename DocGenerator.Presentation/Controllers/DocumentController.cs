@@ -2,6 +2,7 @@
 using DocGenerator.Application.Services.Documents;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace DocGenerator.Presentation.Controllers
 {
@@ -25,6 +26,13 @@ namespace DocGenerator.Presentation.Controllers
         [HttpPost("create-document")]
         public async Task<IActionResult> CreateDocument([FromBody] CreateDocumentRequest request)
         {
+            var userIdClaim = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            if (!int.TryParse(userIdClaim, out var userId))
+                return Unauthorized("ID de usaurio inválido.");
+
+            request.UserId = userId;
+
             var response = await _documentService.CreateDocumentAsync(request);
 
             if (!response.Success)

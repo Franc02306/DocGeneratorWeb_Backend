@@ -188,7 +188,6 @@ namespace DocGenerator.Infrastructure.Repositories.Documents
             using var cmd = conn.CreateCommand();
             cmd.CommandText = sql;
 
-            DbHelper.AddParameter(cmd, document.UserId);
             DbHelper.AddParameter(cmd, document.PostingDate);
             DbHelper.AddParameter(cmd, document.DocumentDate);
             DbHelper.AddParameter(cmd, document.DueDate);
