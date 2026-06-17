@@ -32,6 +32,7 @@
     <None Remove="Queries\HANA\Users\ExistsEmailExceptId.sql" />
     <None Remove="Queries\HANA\Users\ExistsUserNameExceptId.sql" />
     <None Remove="Queries\HANA\Users\UpdateUser.sql" />
+    <None Remove="Queries\SQLSERVER\Authentications\GetUserByUserName.sql" />
     <None Remove="Queries\SQLSERVER\Documents\CreateDocument.sql" />
     <None Remove="Queries\SQLSERVER\Documents\ExistsDocumentInSap.sql" />
     <None Remove="Queries\SQLSERVER\Suppliers\IsSupplierRucMatch.sql" />
@@ -131,6 +132,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\HANA\Users\UpdateUser.sql">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Queries\SQLSERVER\Authentications\GetUserByUserName.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Queries\SQLSERVER\Commons\ExistsCurrencyInSap.sql">
